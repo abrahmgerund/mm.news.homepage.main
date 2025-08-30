@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/styles.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | News homepage</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="body__container container">
+  <nav class="nav">
+    <div class="nav__container container">
+      <div class="nav__logo">
+        <img src="./assets/images/logo.svg" alt="logo">
+      </div>
+      <div class="nav__menu">
+        <ul class="nav__menu-list">
+          <li class="nav__menu-items"><a class="nav__menu-link" href="#">Home</a></li>
+          <li class="nav__menu-items"><a class="nav__menu-link" href="#">New</a></li>
+          <li class="nav__menu-items"><a class="nav__menu-link" href="#">Popular</a></li>
+          <li class="nav__menu-items"><a class="nav__menu-link" href="#">Trending</a></li>
+          <li class="nav__menu-items"><a class="nav__menu-link" href="#">Categories</a></li>
+        </ul>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div class="nav__mobile-menu active">
+      <div class="nav__mobile-menu-toggle-open">
+        <img src="./assets/images/icon-menu.svg" alt="icon-menu">
+      </div>
+      <div class="nav__mobile-menu-slide">
+        <div class="nav__mobile-menu-toggle-close">
+          <img src="./assets/images/icon-menu-close.svg" alt="icon-menu-close">
+        </div>
+        <ul class="nav__mobile-menu-list">
+          <li class="nav__mobile-menu-items"><a class="nav__mobile-menu-link" href="#">Home</a></li>
+          <li class="nav__mobile-menu-items"><a class="nav__mobile-menu-link" href="#">New</a></li>
+          <li class="nav__mobile-menu-items"><a class="nav__mobile-menu-link" href="#">Popular</a></li>
+          <li class="nav__mobile-menu-items"><a class="nav__mobile-menu-link" href="#">Trending</a></li>
+          <li class="nav__mobile-menu-items"><a class="nav__mobile-menu-link" href="#">Categories</a></li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </nav>
+  
+  <div class="grid__container container">
+
+    <main class="main">
+      <div class="main__container container">
+        <div class="main__image">
+          <img src="./assets/images/image-web-3-desktop.jpg" alt="hero-image-main">
+          <img src="./assets/images/image-web-3-mobile.jpg" alt="hero-image-mobile">
+        </div>
+        <div class="main__info">
+          <h1 class="main__title">The Bright Future of Web 3.0?</h1>
+          <div class="main__description">
+            <div class="main__text">
+              <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+              <a class="main__text-read-btn" href="#">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <aside class="aside">
+      <div class="aside__container container">
+        <h2 class="aside__title">New</h2>
+        <div class="aside__articles">
+          <div class="aside__article">
+            <h3><a class="aside__article-title" href="#">Hydrogen VS Electric Cars</a></h3>
+            <p class="aside__article-text">Will hydrogen-fueled cars ever catch up to EVs?</p>
+          </div>
+          <div class="aside__article">
+            <h3><a class="aside__article-title" href="#">The Downsides of AI Artistry</a></h3>
+            <p class="aside__article-text">What are the possible adverse effects of on-demand AI image generation?</p>
+          </div>
+          <div class="aside__article">
+            <h3><a class="aside__article-title" href="#">Is VC Funding Drying Up?</a></h3>
+            <p class="aside__article-text">Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <section class="features">
+      <div class="features__container container">
+        <div class="features__feature">
+          <div class="features__feature-image">
+            <img src="./assets/images/image-retro-pcs.jpg" alt="image-retro-pc">
+          </div>
+          <div class="features__feature-info">
+            <h3 class="features__feature-title-number">01</h3>
+            <h4><a class="features__feature-title" href="#">Reviving Retro PCs</a></h4>
+            <p class="features__feature-text">What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+        <div class="features__feature">
+          <div class="features__feature-image">
+            <img src="./assets/images/image-top-laptops.jpg" alt="image-retro-pc">
+          </div>
+          <div class="features__feature-info">
+            <h3 class="features__feature-title-number">02</h3>
+            <h4><a class="features__feature-title" href="#">Top 10 Laptops of 2022</a></h4>
+            <p class="features__feature-text">Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+        <div class="features__feature">
+          <div class="features__feature-image">
+            <img src="./assets/images/image-gaming-growth.jpg" alt="image-retro-pc">
+          </div>
+          <div class="features__feature-info">
+            <h3 class="features__feature-title-number">03</h3>
+            <h4><a class="features__feature-title" href="#">The Growth of Gaming</a></h4>
+            <p class="features__feature-text">How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Home
+  New
+  Popular
+  Trending
+  Categories
+
+  The Bright Future of Web 3.0?
+
+  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+  But is it really fulfilling its promise?
+
+  Read more
+
+  New 
+
+  Hydrogen VS Electric Cars
+  Will hydrogen-fueled cars ever catch up to EVs?
+
+  The Downsides of AI Artistry
+  What are the possible adverse effects of on-demand AI image generation?
+
+  Is VC Funding Drying Up?
+  Private funding by VC firms is down 50% YOY. We take a look at what that means.
+
+  01
+  Reviving Retro PCs
+  What happens when old PCs are given modern upgrades?
+
+  02
+  Top 10 Laptops of 2022
+  Our best picks for various needs and budgets.
+
+  03
+  The Growth of Gaming
+  How the pandemic has sparked fresh opportunities.
+  -->
+
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name</a>.
+  </footer>
+</div>
+  <script src="./script/script.js"></script>
+</body>
+</html>
